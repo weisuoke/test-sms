@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+  </head>
+  <body>
+    <a
+      href="sms:&body=Hi,%0D%0AI'd like your permission to commercially sell a photo I took of you through 500px. Could you please fill out this quick"
+      id="test"
+      >12s</a
+    >
+  </body>
+  <script>
+    let test = document.getElementById("test");
+    test.addEventListener("click", function(e) {
+      // e.preventDefault();
+      let url =
+        "sms:?body=Hi,%0D%0AI'd like your permission to commercially sell a photo I took of you through 500px. Could you please fill out this quick form? https%3A%2F%2Fweb.j79-stage.500px.net%2Fmanage%2FmodelReleaseForm%2F627875ef-5332-4023-9f88-0eac11eb6859%0D%0AThanks!%0D%0ALet me know if you have any questions." 
+      window.open(url);
+    });
+  </script>
+</html>
